@@ -1,16 +1,9 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=yes, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Buchet List</title>
-</head>
-<body>
+{% extends '' %}
+{% block title %}{% endblock %}
+{% block body %}
     {% set accueil = "Hello" %}
-   <h1>{{ accueil|upper }}</h1>
-   <h1>{{ "now"|date('Y') }}</h1>
 
-</body>
-</html>
+   <h1>{{ accueil|upper }}</h1>
+{% endblock %}
+{% block footer %}{% endblock %}
+
