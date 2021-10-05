@@ -22,4 +22,11 @@ class MainControllor extends AbstractController
     {
         return $this->render('main/test.html.twig');
     }
+    /**
+     * @Route("/list", name="main_list")
+     */
+    public function list()
+    {
+        return $this->render('main/list.html.twig');
+    }
 }
