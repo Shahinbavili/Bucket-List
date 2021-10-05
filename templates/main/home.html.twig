@@ -1,9 +1,10 @@
-{% extends '' %}
-{% block title %}{% endblock %}
+{% extends 'base.html.twig' %}
+{% block title %}{{ parent() }}{% endblock %}
 {% block body %}
+    {{ parent() }}
     {% set accueil = "Hello" %}
 
    <h1>{{ accueil|upper }}</h1>
 {% endblock %}
-{% block footer %}{% endblock %}
+{% block footer %}{{ parent() }}{% endblock %}
 

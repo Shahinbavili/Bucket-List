@@ -12,13 +12,7 @@
 <body>
 <header>
     <h1>Bucket List</h1>
-    <nav>
-        <ul>
-            <li><a href="main/home.html.twig" title="home">home</a></li>
-            <li><a href="main/test.html.twig" title="test">test</a></li>
-            <li><a href="main/list.html.twig" title="list">list</a></li>
-        </ul>
-    </nav>
+{% include 'inc/nav.html.twig' %}
 
 </header>
 <main>
@@ -27,6 +21,7 @@
 <footer>
     {% block footer %}
         <h1>&copy;{{ "now"|date('Y') }}Bucket list!</h1>
+        {% include 'inc/nav.html.twig' %}
     {% endblock %}
 </footer>
 </body>
